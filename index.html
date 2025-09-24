@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Casus Oyunu</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        #role { margin: 20px; font-size: 24px; font-weight: bold; }
+        button { padding: 10px 20px; font-size: 18px; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Casus Oyunu</h1>
+    <label>Oyuncu sayısı: <input type="number" id="numPlayers" min="2" max="10" value="3"></label>
+    <br><br>
+    <button onclick="startGame()">Oyunu Başlat</button>
+    <div id="role"></div>
+    <button id="nextBtn" style="display:none;" onclick="nextPlayer()">Sonraki Oyuncu</button>
+
+    <script src="game.js"></script>
+</body>
+</html>
